@@ -1,0 +1,173 @@
+/* ================== 로그인페이지 ================== */
+.order_wrap{width:450px; margin:60px auto;}
+
+.login_st{width:100%;}
+.login_st input[type=text],.login_st input[type=email]{
+	font-family: 'Noto Sans';
+	padding:3%;
+	font-size:15px;
+	width:100%;
+	box-sizing:border-box;
+	margin-bottom:8px;
+	border:1px solid #d8d8d8;
+	border-radius:30px;
+	background:#fff;
+	height:50px;
+}
+
+.login_st .pwdBox{
+	font-family: 'Noto Sans';
+	padding:3%;
+	font-size:15px;
+	width:100%;
+	box-sizing:border-box;
+	border:1px solid #d8d8d8;
+	border-radius:30px;
+	background:#fff;
+	height:50px;
+}
+
+.login_st input[placeholder=아이디]{font-weight:400;}
+.login_st input[placeholder=비밀번호]{font-weight:400;}
+
+.login_st input::-webkit-input-placeholder { font-size: 14px;color:#666; }
+.login_st input::-moz-placeholder { font-size: 14px;color:#666; }
+.login_st input:-ms-input-placeholder { font-size: 14px;color:#666; }
+.login_st input:-moz-placeholder { font-size: 14px;color:#666; }
+
+/* 아이디저장 */
+.id-chk{margin-top:3%; margin-left:2%;}
+.id-chk .squaredThree{ float:left;}
+.id-chk p{
+	float:left;
+	margin-left:6%;
+	font-size:14px;
+	font-weight:500;
+	color:#666;
+	line-height:1.6;
+}
+
+/* 로그인버튼 */
+.login-btn a{
+	width:100%;
+	margin:3% auto;
+	padding:2% 0;
+	background-color:#454848;
+	color:#fff;
+	text-align:center;
+	display:block;
+	font-weight:600;
+	font-size:18px;
+	border-radius:30px;
+}
+
+/* 회원가입,아이디비밀번호찾기 */
+.find-btn{display:flex; justify-content:center}
+.find-btn a:first-child{ margin-right:5%; }
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.order_wrap{width:100%; margin:40px auto;}
+
+	.login_st input[type=text],.login_st input[type=email]{ padding:4%; font-size:13px; height:45px;}
+	.login_st .pwdBox{padding:4%; font-size:13px; height:45px;}
+
+	.login_st input[placeholder=아이디]{font-weight:400;}
+	.login_st input[placeholder=비밀번호]{font-weight:400;}
+
+	.login_st input::-webkit-input-placeholder { font-size: 13px;color:#666; }
+	.login_st input::-moz-placeholder { font-size: 13px;color:#666; }
+	.login_st input:-ms-input-placeholder { font-size: 13px;color:#666; }
+	.login_st input:-moz-placeholder { font-size: 13px;color:#666; }
+
+	/* 아이디저장 */
+	.id-chk p{
+		margin-left:10%;
+		font-size:13px;
+		font-weight:500;
+		color:#666;
+		line-height:1.6;
+	}
+
+	/* 로그인버튼 */
+	.login-btn a{margin:5% auto; padding:3% 0; font-size:16px;}
+	
+	/* 회원가입,아이디비밀번호찾기 */
+	.find-btn{display:flex; justify-content:center; font-size:13px; margin-top:5%;}
+	.find-btn a:first-child{ margin-right:5%; }
+}
+
+
+
+
+/* ================== 회원가입 ================== */
+.join_sec .privacy_wrap {
+	padding: 15px;
+	border: 1px solid #ddd;
+	background: #eee;
+	height: 250px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.join_con .tm1{color:#454848; font-size:18px; margin-bottom:13px; font-weight:600;}
+.join_con {margin-bottom:50px;}
+
+/* 이용약관내용 */
+.join_con .privacy_wrap h1 {padding:10px 0; font-size: 24px; font-weight: 600;}
+.join_con .privacy_wrap h2{margin:15px 0 10px; padding:0; font-size:16px; font-weight:600;}
+.join_con .privacy_wrap p {margin:0 0 10px; font-weight:400; font-size:14px;}
+.privacy_wrap ol {margin:0;}
+.privacy_wrap ol .mt6 {padding-left:10px;}
+.privacy_wrap ol li {margin-bottom:5px; margin-left:5px;}
+
+/* 체크박스 */
+.join_con .privacy-chk{float:right; margin:7px 5px 0 0;}
+.join_con .cm1{margin-left:30px; font-weight:600; font-size:14px;}
+
+
+/* 버튼 */
+.btn_con {text-align: center;}
+.join_f_btn {
+	display: inline-block;
+	width: 150px;
+	height:55px;
+	line-height:55px;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 15px;
+}
+.btn_st2 {color: #333; background-color: #ddd;}
+.btn_st1 {color: #fff; background-color: #848989;}
+.btn_st1:hover {background-color: #454848;}
+
+
+
+
+/* ================== 개인정보처리방침 ================== */
+.policytitle {
+	font-size:20px;
+	color:#454848;
+	margin::20px 0;
+	font-weight:600;
+	border-bottom:1px solid #d8d8d8;
+	padding-bottom:15px;
+}
+.policycontent {
+	word-break:keep-all;
+	font-size:16px;
+	color:#333;
+	line-height:1.6;
+	margin:15px 0 60px;
+}
+.title_inner{font-size:15px;font-weight:normal;margin-left:10px;color:#888888;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.policytitle {margin-left:10px;}
+	.policycontent {margin-left:10px;}
+}
+@media screen and (max-width:768px) {
+	.policytitle {width:95%; font-size:18px; text-align:center; margin:20px auto; word-break:keep-all;}
+	.policycontent {width:95%; font-size:13px; margin:15px auto 60px;}
+	.title_inner{font-size:13px;font-weight:400;}
+}

@@ -1,0 +1,37 @@
+.move{position:relative;right:0;top:10px;opacity:0;transition:all 0.7s;}
+.active{opacity:1 !important;right:0 !important;top:0 !important;}
+.move2{transition-delay:0.2s;}
+.move4{transition-delay:0.4s;}
+.move5{transition-delay:0.6s;}
+.move6{transition-delay:0.8s;}
+.move7{transition-delay:1.0s;}
+.move8{transition-delay:1.2s;}
+
+
+.move9{transition-delay:0.2s;}
+.move10{transition-delay:0.4s;}
+.move11{transition-delay:0.6s;}
+
+.move12{transition-delay:0.2s;}
+.move13{transition-delay:0.4s;}
+.move14{transition-delay:0.6s;}
+.move15{transition-delay:0.8s;}
+.move16{transition-delay:1.0s;}
+.move17{transition-delay:1.2s;}
+
+.move18{transition-delay:0.2s;}
+.move19{transition-delay:0.4s;}
+.move20{transition-delay:0.6s;}
+.move21{transition-delay:0.8s;}
+.move22{transition-delay:1.0s;}
+.move23{transition-delay:1.2s;}
+
+
+.move24{top:0;;}
+
+.move25{transition-delay:0.2s;}
+.move26{transition-delay:0.4s;}
+.move27{transition-delay:0.6s;}
+.move28{transition-delay:0.8s;}
+.move29{transition-delay:1.0s;}
+.move30{transition-delay:1.2s;}

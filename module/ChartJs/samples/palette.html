@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Bar Chart</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/module/ChartJs/Chart.js"></script>
+<script src="/module/ChartJs/samples/utils.js"></script>
+<style>
+div{width:500px;height:40px;margin:0 0 5px 0;}
+</style>
+</head>
+
+<script>
+cArr = new Array("red","orange","yellow","green","blue","purple","grey","yellowgreen","aliceblue","antiquewhite","aqua","aquamarine","azure","beige","bisque","black","blanchedalmond","blueviolet","brown","burlywood","cadetblue","chartreuse","chocolate","coral","cornflowerblue","cornsilk","crimson","cyan","darkblue","darkcyan","darkgoldenrod","darkgray","darkgreen","darkgrey","darkkhaki","darkmagenta","darkolivegreen","darkorange","darkorchid","darkred","darksalmon","darkseagreen","darkslateblue","darkslategray","darkslategrey","darkturquoise","darkviolet","deeppink","deepskyblue","dimgray","dimgrey","dodgerblue","firebrick","floralwhite","forestgreen","fuchsia","gainsboro","ghostwhite","gold","goldenrod","gray","greenyellow","honeydew","hotpink","indianred","indigo","ivory","khaki","lavender","lavenderblush","lawngreen","lemonchiffon","lightblue","lightcoral","lightcyan","lightgoldenrodyellow","lightgray","lightgreen","lightgrey","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslategray","lightslategrey","lightsteelblue","lightyellow","lime","limegreen","linen","magenta","maroon","mediumaquamarine","mediumblue","mediumorchid","mediumpurple","mediumseagreen","mediumslateblue","mediumspringgreen","mediumturquoise","mediumvioletred","midnightblue","mintcream","mistyrose","moccasin","navajowhite","navy","oldlace","olive","olivedrab","orangered","orchid","palegoldenrod","palegreen","paleturquoise","palevioletred","papayawhip","peachpuff","peru","pink","plum","powderblue","rebeccapurple","rosybrown","royalblue","saddlebrown","salmon","sandybrown","seagreen","seashell","sienna","silver","skyblue","slateblue","slategray","slategrey","snow","springgreen","steelblue","tan","teal","thistle","tomato","turquoise","violet","wheat","white","whitesmoke");
+
+var color = Chart.helpers.color;
+
+$(document).ready(function () {
+	cNum = cArr.length;
+
+	for(i=0; i<cNum; i++){
+		cName = cArr[i];
+
+		backgroundColor = color(window.chartColors[cName]).alpha(0.5).rgbString();
+		borderColor = window.chartColors[cName];
+
+		$("#palette").append("<div style='background-color:"+backgroundColor+";border:1px solid "+borderColor+";'>"+cName+"</div>");
+	}
+});
+</script>
+
+<div id='palette'></div>

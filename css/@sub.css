@@ -1,0 +1,715 @@
+/* ================== 서브기본세팅 ================== */
+.sub_contents{width:1200px; margin:0 auto;}
+.mo{display:none;}
+
+/* 서브상단이미지*/
+.subimg{width:100%; height:300px; line-height:300px; text-align:center; color:#ffffff; font-size:32px; font-weight:600;}
+.subimg1{background:url(/images/sub/sub-top1.png) no-repeat;}
+.subimg2{background:url(/images/sub/sub-top2.png) no-repeat;}
+.subimg3{background:url(/images/sub/sub-top3.png) no-repeat;}
+.subimg4{background:url(/images/sub/sub-top4.png) no-repeat;}
+.subimg5{background:url(/images/sub/sub-top5.png) no-repeat;}
+.subimg6{background:url(/images/sub/sub-top6.png) no-repeat;}
+.subimg7{background:url(/images/sub/sub-top7.png) no-repeat;}
+
+
+/* 서브 titlebox css */
+.titlebox2 {font-size:28px; margin-bottom:50px; color:#333; font-weight:600; padding-bottom:20px; border-bottom:1px solid #ddd; box-sizing:border-box;}
+
+/* 서브컨텐츠 */
+.box_R{width:1000px; float:left; padding:50px 0 0 49px; border-left:1px dotted #c1c1c1; box-sizing:border-box;}
+.box_content{width:100%; margin-bottom:90px;}
+.box_content img{max-width:1000px;}
+.box_content p{font-size:18px; word-break:keep-all;}
+.box_content b{font-weight:600;}
+
+/* ================== 태블릿 ================== */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.sub_contents{width:100%; margin:0 auto;}
+	.sidemenu{display:none;}
+
+	/* 서브상단이미지 */
+	.subimg{height:200px; line-height:200px; font-size:30px; background-size: cover;}
+
+	/* 서브컨텐츠 */
+	.box_R{width:100%; float:left; padding:50px 10px; border-left:0;}
+	.box_content{width:100%; margin-bottom:50px;}
+}
+/* ================== 모바일 ================== */
+@media screen and (max-width:768px) {
+	.box_content .mo{display:block !important;}
+	.box_content .pc{display:none !important;}
+	.sub_contents{width:100%; margin:0 auto;}
+	.sidemenu{display:none;}
+
+	/* 서브상단이미지 */
+	.subimg{height:150px; line-height:150px; font-size:24px; background-size: cover;}
+
+	/* 서브 titlebox css */
+	.titlebox2 {font-size:24px; margin-bottom:30px; padding-bottom: 10px; text-align: center;}
+
+	/* 서브컨텐츠 */
+	.box_R{width:100%;float: none;padding: 30px 10px;border-left:0;}
+	.box_content{width:100%; margin-bottom:30px;}
+	.box_content p{font-size:14px; line-height:1.5; word-break:keep-all;}
+}
+
+
+
+
+/* ================== sub0101인사말 ================== */
+.sub0101 p{margin-top:-35px;}
+.sub0101 .img0101-2{width:100%; max-width:145px; margin-top:-1%; margin-left:1.5%;}
+.sub0101 .img0101bg{position:relative; z-index:-1; margin-top:-35%;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.sub0101 p{margin-top:-15px;}
+	.sub0101 .img0101bg{margin-top:-30%;}
+}
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub0101 p{margin-top:15px; text-align:center;}
+	.sub0101 .img0101-2{display:block; max-width:110px; text-align:center; margin: 3% auto 0;}
+	.sub0101 .img0101bg{margin-top:-30%;}
+}
+
+
+
+
+/* ================== sub0102비전미션 ================== */
+.grybox{background:#f5f5f5; padding:30px 0 0; margin-bottom:50px; border-radius:50px;}
+.sub0103 .mission {position: relative; padding-bottom:30px;}
+.sub0103 .goal{padding-bottom:80px;}
+
+/* 삼각형구분선 */
+.sub0103 .triline:before { content: ""; display: block; position: absolute;left: 0; bottom: 0; width: 100%; height: 1px;  background-color: #cfdada;}
+.sub0103 .triline::after{ content :""; display:block; position: absolute; bottom:0; left:50%; border: 25px solid transparent; border-top-color:#cfdada;transform:rotate(180deg) translateX(50%); -ms-transform:rotate(180deg) translateX(50%); -webkit-transform:rotate(180deg) translateX(50%); -moz-transform:rotate(180deg)  translateX(50%); -o-transform:rotate(180deg)  translateX(50%);}
+
+.sub0103 .tit:before{display:block; content:""; width:40px; height:4px; background:#ffc20e; margin:10px auto;}
+.sub0103 .tit{display:block; font-size:26px; text-align:center;color:#333; font-weight:800;}
+.sub0103 p.txt {margin-top: 10px; font-size:18px;text-align: center;}
+.sub0103 p.txt span.om {font-size: 30px; font-weight: 800; padding: 6px; color:#666;} 
+.sub0103 .txt .vlaueimg{margin-top:3%; width:100%; max-width:790px;}
+.sub0103 .txt .goalimg{width:100%; max-width:650px;}
+
+/* 경영전략 */
+.sub0103 .manage {margin:70px auto; padding-bottom:80px;}
+.manage ul {margin: 60px auto 0;}
+.manage ul li {float:left;position:relative;width: 19%;height: 130px;min-height:100px;padding: 40px 5px 20px 5px;border:1px solid #e2e2e2;box-sizing: border-box;margin: 0.5%;text-align: center;color: #333;word-break: keep-all;font-size: 16px;}
+.manage ul li:before{
+	content:"";
+	display:block;
+	position:absolute;
+	left: calc(50% - 30px);
+	top: -40px;
+	width: 60px;
+	height: 60px;
+	background-color:#f7f7f7;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	border: 1px solid #e2e2e2;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 55px;
+}
+.manage ul li:nth-child(1):before {content:"01";}
+.manage ul li:nth-child(2):before {content:"02";}
+.manage ul li:nth-child(3):before {content:"03";}
+.manage ul li:nth-child(4):before {content:"04";}
+.manage ul li:nth-child(5):before {content:"05";}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.grybox{padding:20px 0 0; border-radius:30px;}
+	.sub0103 .mission {padding-bottom:20px;}
+	.sub0103 .goal{padding-bottom:50px;}
+
+	/* 삼각형구분선 */
+	.sub0103 .triline::after{border: 15px solid transparent; border-top-color:#cfdada; transform:rotate(180deg) translateX(50%); -ms-transform:rotate(180deg) translateX(50%); -webkit-transform:rotate(180deg) translateX(50%); -moz-transform:rotate(180deg)  translateX(50%); -o-transform:rotate(180deg)  translateX(50%);}
+
+	.sub0103 .tit:before{margin:10px auto;}
+	.sub0103 .tit{font-size:20px;}
+	.sub0103 p.txt {font-size:13px;}
+	.sub0103 p.txt span.om {font-size: 20px; padding: 3px;} 
+
+	/* 경영전략 */
+	.sub0103 .manage {margin:50px auto; padding-bottom:50px;}
+	.manage ul {margin: 50px auto 0;}
+	.manage ul li {float:none; width:100%; height: auto; min-height:auto; padding:25px 5px 15px 5px; margin-bottom: 11%; font-size: 13px;}
+	.manage ul li:last-child{margin-bottom:10px;}
+	.manage ul li:before{
+		left: 50%;
+		transform:translate(-50%, 0);
+		top: -30px;
+		width: 45px;
+		height: 45px;
+		font-size: 20px;
+		line-height: 40px;
+	}
+}
+
+
+
+/* ================== sub0102ci소개 ================== */
+.cibox{margin-bottom:80px;}
+.cibox img{display:block; margin:20px 0;}
+.contit:before{display:block; content:""; width:40px; height:4px; background:#ffc20e; margin-bottom:10px; }
+.contit{text-align:left; font-size:26px; font-weight:600; margin-bottom:20px;}
+
+.flexbox{display:flex;}
+.between{justify-content:space-between;}
+
+.sig{text-align:center; font-size:18px;}
+
+/* 컬러박스 */
+.color1{width:70%; background:#454848;  color:#fff;}
+.color2{width:30%; background:#ffc20e; color:#454848;}
+.colorbox{height:auto; font-family: 'Montserrat', sans-serif; font-weight:500; padding:2%; box-sizing:border-box;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.cibox .contit{margin-bottom:15px;}
+
+	.color1{width:65%;}
+	.color2{width:35%;}
+}
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.cibox{margin-bottom:60px; text-align:center;}
+	.cibox img{margin:10px 0;}
+	.contit:before{margin:10px auto;}
+	.contit{font-size:20px; margin-bottom:10px; text-align:center;}
+
+	.flexbox{flex-direction: column;}
+	.between{justify-content:center;}
+
+	.sig{font-size:13px;margin: 0 auto;}
+
+	/* 컬러박스 */
+	.color1{width:100%; background:#454848;  color:#fff;}
+	.color2{width:100%; background:#ffc20e; color:#454848;}
+	.colorbox{height: auto;padding:3%;font-size:12px;}
+}
+
+
+
+
+/* ================== sub0105이사회 ================== */
+.sub0105 img{margin-bottom:70px;}
+.tbl-po{width:100%; border-collapse:collapse; border-top:2px solid #454848;box-sizing:border-box;}
+.tbl-po th{background:#f5f5f5; padding:1%; box-sizing:border-box; font-size:18px; font-weight:500; border:1px solid #ddd;}
+.tbl-po th:first-child{border-left:0;}
+.tbl-po th:last-child{border-right:0;}
+.tbl-po td{padding:1%; box-sizing:border-box; font-size:17px; border:1px solid #ddd; word-break:keep-all; text-align:center;}
+.tbl-po td:first-child{border-left:0;}
+.tbl-po td:last-child{border-right:0;}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub0105 img{margin-bottom:50px;}
+	.tbl-po th{padding:2% 1.7%; font-size:15px;}
+	.tbl-po td{padding:2% 1.7%; font-size:13px;}
+}
+
+
+
+
+/* ================== sub0107조직및직원안내 ================== */
+.sub0107 img{margin-bottom:70px;}
+.orga-box{margin-bottom:70px;}
+.orga-box:last-child{margin-bottom:0;}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub0107 img{margin-bottom:50px;}
+	.sub0107 .tbl-po th{padding:1.5% 0.5%; font-size:15px;}
+	.sub0107 .tbl-po td{padding:1.5% 0.5%; font-size:13px; word-break:keep-all;}
+
+	.orga-box{margin-bottom:50px;}
+}
+
+
+
+
+/* ================== sub0107조직및직원안내 ================== */
+.sub0107 img{margin-bottom:70px;}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub0107 img{margin-bottom:50px;}
+	.sub0107 .tbl-po th{padding:1.5% 0.5%; font-size:15px;}
+	.sub0107 .tbl-po td{padding:1.5% 0.5%; font-size:13px; word-break:keep-all;}
+}
+
+
+
+
+/* ================== sub0108-4윤리헌장 ================== */
+.sub8head{
+	background:url(../images/sub/sub0108-1.png) no-repeat center;
+	background-size:contain;
+	font-size:38px;
+	padding:2% 0;
+	text-align:center;
+}
+
+.sub0108-4 p:before{display:block; content:""; width:50px; height:2px; background:#ccc; margin:0 auto 40px;}
+.sub0108-4 p{
+	text-align:center;
+	border-bottom:2px dotted #ddd;
+	padding-bottom:50px;
+	margin:50px auto;
+}
+
+.sub0108-4 .grybox{background:#f5f5f5; padding:4%; box-sizing:border-box;}
+.sub0108-4 .grybox li{margin-bottom:10px; font-size:17px;}
+.sub0108-4 .grybox li:last-child{margin-bottom:0;}
+.sub0108-4 .grybox li span{
+	display:inline-block;
+	margin-right:5px;
+	background:#454848;
+	color:#fff;
+	padding:5px 10px;
+	box-sizing:border-box;
+	border-radius:20px;
+}
+
+.sub0108-4 .date:before{display:none;}
+.sub0108-4 .date{border:0;}
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.sub0108-4 .pc{display:none !important;}
+	.sub0108-4 .mo{display:block;}
+
+	.sub8head{font-size:30px; padding:1.5% 0;}
+
+	.sub0108-4 p:before{ margin:0 auto 30px;}
+	.sub0108-4 p{padding-bottom:40px; margin:40px auto;}
+
+	.sub0108-4 .grybox li{margin-bottom:12px; word-break:keep-all;}
+}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub0108-4 .pc{display:none !important;}
+	.sub0108-4 .mo{display:block;}
+
+	.sub8head{font-size:24px; padding:3% 0;}
+
+	.sub0108-4 p:before{ margin:0 auto 30px;}
+	.sub0108-4 p{padding-bottom:30px; margin:30px auto;}
+
+	.sub0108-4 .grybox{padding:5%;}
+	.sub0108-4 .grybox li{margin-bottom:12px;word-break:keep-all; font-size: 13px;}
+
+	.sub0108-4 .grybox li span{margin-right:3px; padding:3px 7px;}
+}
+
+
+
+
+/* ================== sub0109오시는길 ================== */
+/* 다음지도css */
+.root_daum_roughmap .hide{display:none;}
+.root_daum_roughmap_landing{width:100%; height:400px !important;}
+.root_daum_roughmap{width:100% !important;}
+.root_daum_roughmap .wrap_map {
+	width: 100%;
+	position: relative;
+	height: 100% !important;
+}
+
+.contact-info { position:relative; padding:30px ; background:#fff; border-bottom:1px solid #ddd;}
+.contact-info li {line-height:25px; font-size:16px;}
+.contact-info li.tit { background:none; margin-bottom:15px; padding-left:0; font-size:20px; color:#333; font-weight:800;}
+.contact-info li.mapbtn { position:absolute; right:50px; bottom:30px;}
+.contact-info li.mapbtn2 { position:absolute; right:57px; bottom:30px;}
+.contact-info li.mapbtn a { 
+	font-size:15px;
+	font-weight:600;
+	text-align:center;
+	display:block;
+	width:100%;
+	line-height:30px;
+	height:30px;
+	background: #454848;
+	color:#fff;
+	padding:5px 8px;
+}
+.contact-info li.mapbtn2 a { 
+	font-size:15px;
+	font-weight:600;
+	text-align:center;
+	display:block;
+	width:100%;
+	line-height:30px;
+	height:30px;
+	background: #454848;
+	color:#fff;
+	padding:5px 12px;
+}
+
+/* 이동수단 */
+.location-info{border-collapse:collapse; width:100%;}
+.location-info th{font-size:20px; width:25%; text-align:left; padding:2%; border-bottom:1px solid #ddd; box-sizing:border-box;}
+.location-info td{width:75%; font-size:15px; padding:3% 2%; border-bottom:1px solid #ddd; box-sizing:border-box;}
+
+.location-info .move{width: 50%; text-align: center; line-height: 2; font-weight:600; color:#454848;}
+.location-info td .carlist li{list-style:square; margin-left:2%;}
+.location-info td .carlist li span{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	border-radius: 50%;
+	line-height:28px;
+}
+
+.buslist{border-top:2px solid #454848; border-bottom:2px solid #454848; border-collapse:collapse; width:100%;}
+.buslist .terminal{text-align:center; width:28%; background:#454848; color:#fff; }
+.buslist td{padding:2%; box-sizing:border-box; word-break:keep-all;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.location-info th{width:20%;}
+	.location-info td{width:80%;}
+	.location-info .move{width: 100%;}
+
+	.buslist .terminal{width:30%;}
+}
+/* 모바일 */
+@media screen and (max-width:768px) {
+	/* 다음지도css */
+	.root_daum_roughmap_landing{width:100%; height:300px !important;}
+
+	.contact-info {position:static; padding:25px 0; border-bottom:1px solid #ddd;}
+	.contact-info li {line-height:1.6; font-size:13px; letter-spacing:-0.5px;}
+	.contact-info li.tit {margin-bottom:10px; padding-left:0; font-size:16px;}
+	.contact-info li.mapbtn {margin:10px auto; position:static; right:auto; bottom:auto;}
+	.contact-info li.mapbtn2 {margin:10px auto;position:static; right:auto; bottom:auto;}
+	.contact-info li.mapbtn a {font-size:13px; font-weight:600; padding:0;}
+	.contact-info li.mapbtn2 a {font-size:13px; font-weight:600; padding:0;}
+
+	/* 이동수단 */
+	.location-info{
+		border-collapse:collapse;
+		width:100%;
+	}
+	.location-info th{font-size:15px;width:15%;border-right:1px solid #ddd;padding: 0 1% 0 0;}
+	.location-info td{width:75%; font-size:13px; padding:3% 2%;}
+
+	.location-info .move {width: 100%;}
+	.move img{width:80%; max-width:60px;}
+
+	.location-info td .carlist{margin-left:10%;}
+	.location-info td .carlist li{margin-left:0%; word-break:keep-all;}
+	.location-info td .carlist li span{font-size:12px; width: 23px; height: 23px; line-height:23px;}
+
+	.buslist .terminal{text-align:center; width:25%;}
+	.buslist td{padding:2%; box-sizing:border-box;  word-break:keep-all;}
+}
+
+
+
+
+/* ================== sub0205관람예절 ================== */
+.etiquette{display:flex; align-items:center; border-bottom:2px dotted #ddd; padding-bottom:30px; margin-bottom:30px;}
+.etiquette:last-child{border-bottom:0; padding-bottom:0;}
+
+.et-icon{flex-basis:12%;}
+.et-tt .head span{display:inline-block; font-size:26px; font-weight:500; margin-bottom:15px;}
+.et-tt .head span:after {display:block; content:""; width:100%; height:10px; margin-top:-12px; background:#ffe9a7;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.et-icon{flex-basis:14%;}
+	.et-tt .head span{font-size:24px; margin-bottom:12px;}
+}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.etiquette{display:block; text-align:center;}
+	.etiquette .et-icon{width:15%; margin:0 auto;}
+	.et-tt .head span{font-size:20px; margin:15px auto;}
+	.et-tt .head span:after {display:block; width:40px; height:2px; background:#ffc20e; margin:15px auto 0;}
+}
+
+
+
+/* ================== sub0301-1억새꽃축제 ================== */
+.fes-sec{margin:60px auto;}
+/* 축제테이블 */
+.festbl{width:100%; border-collapse:collapse; box-sizing:border-box; border-top:2px solid #454848; border-bottom:2px solid #454848;}
+.festbl th{width:20%; padding:2%; box-sizing:border-box; background:#454848; color:#fff; font-size:18px; font-weight:600; border-bottom:1px solid #666;}
+.festbl td{padding:2%; box-sizing:border-box; border-bottom:1px solid #ddd; font-size:18px;}
+.festbl td a{text-decoration:underline;}
+
+.fes-sec p{width:95%;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+.fes-sec p{width:100%;}
+}
+
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.fes-sec{margin:40px auto;}
+	/* 축제테이블 */
+	.festbl th{width:25%; font-size:14px;}
+	.festbl td{font-size:14px;}
+	.fes-sec p{width:100%; text-align:center;}
+}
+
+
+
+
+
+/* ================== sub0302-1전문예술인지원사업 ================== */
+.supportbox{margin:60px auto;}
+
+/* 사업내용 */
+.pro-artbox{
+	display:flex;
+	align-items:center; 
+	border-top:2px dotted #ddd;
+	padding:30px 0; 
+}
+.pro-artbox:last-child{border-bottom:2px dotted #ddd;}
+
+.prart-icon{text-align:center; flex-basis:15%;border-right:1px solid #ddd; margin-right:5%;}
+
+.prart-tt .head span{display:inline-block; font-size:26px; font-weight:500; margin-bottom:15px;}
+.prart-tt .head span:after {display:block; content:""; width:100%; height:10px; margin-top:-12px; background:#ffe9a7;}
+
+/* 신청자격 */
+.ability-tt{font-size:18px; margin-bottom:10px;}
+.ability-tt ul{margin-left:15px;}
+.ability-tt ul li{font-size:16px; line-height:1.6;}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.supportbox{margin:40px auto; text-align:center;}
+
+	/* 사업내용 */
+	.pro-artbox{padding: 20px 0;display:block;align-items:center;}	
+	.prart-icon{width:12%; border-right:0; margin:0px auto 10px;}
+	.prart-tt .head span{font-size:20px;}
+
+	/* 신청자격 */
+	.ability-tt{font-size:15px; margin-bottom:20px;}
+	.ability-tt ul{margin-left:10px;}
+	.ability-tt ul li{font-size:13px; word-break:keep-all;}
+}
+
+
+
+
+
+/* ================== sub0401-1포천시립예술단 ================== */
+.headtt {margin-bottom:40px;}
+.headtt p {padding: 0; text-align:center; letter-spacing:-1px;}
+.headtt p.line1 {margin-bottom: 0;font-size:26px;}
+.headtt p.line2 span {display:inline-block; font-size:38px; color:#0080c8; letter-spacing:-1px; font-weight:600;}
+.headtt p.line2 span:after {display:block; content:""; width:100%; height:15px; margin-top:-18px; background:#b2d9ee;}
+
+.sub0401 .boldtt{margin:50px auto 30px; font-size:22px;}
+.sub0401 p{text-align:center;}
+
+/* 상단타이틀소년소녀합창단 */
+.headtt p.linebrwn span {color:#8f5c53;}
+.headtt p.linebrwn span:after {background:#ebdfdd;} 
+
+/* 시립극단타이틀 */
+.headtt p.linegrn span {color:#33937a;}
+.headtt p.linegrn span:after {background:#c2eae0;} 
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.headtt {margin-bottom:20px;}
+	.headtt p {padding: 0; text-align:center; letter-spacing:-1px;}
+	.headtt p.line1 {margin-bottom:5px;font-size:14px;}
+	.headtt p.line2 span {font-size:24px; line-height:30px; letter-spacing:-2px;}
+	.headtt p.line2 span:after {display:block; content:""; width:100%; height:10px; margin-top:-10px; background:#b2d9ee;}
+
+	.sub0401 .boldtt{margin:50px auto 30px; font-size:18px;}
+	.sub0401 p{text-align:center;}
+
+	/* 상단타이틀소년소녀합창단 */
+	.headtt p.linebrwn span {color:#8f5c53;}
+	.headtt p.linebrwn span:after {background:#ebdfdd;} 
+
+	/* 시립극단타이틀 */
+.headtt p.linegrn span {color:#33937a;}
+.headtt p.linegrn span:after {background:#c2eae0;} 
+}
+
+
+
+/* ================== sub0401-2포천시립예술단 ================== */
+.history {margin-top: 60px; width: 100%;}
+.history th {
+	width:25%;
+	font-size: 38px;
+	font-weight: 600;
+	color: #0080c8;
+}
+.history .color_line {border-top: 2px solid #0080c8;}
+/* 시립소년소녀합창단 border-top*/
+.history .w2 {border-top: 2px solid #8f5c53;}
+
+/* 시립소년소녀합창단 border-top*/
+.history .w3 {border-top: 2px solid #33937a;}
+
+.history td, .history th {
+	line-height: 30px;
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	box-sizing:border-box;
+}
+.history p {
+	text-align:left;
+	font-size: 14px;
+	line-height:28px;
+	color:#666;
+	padding-left:25px;
+}
+.history p span {
+	font-weight:500;
+	font-size: 16px;
+	margin-right: 20px;
+	color:#333;
+}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.history {margin-top: 50px;}
+	.history th {font-size: 30px;}
+	.history td, .history th {padding: 15px 0;}
+	.history p {padding-left:20px;}
+}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.history {margin-top: 60px; width: 100%;}
+	.history th {
+		width:22%;
+		font-size: 20px;
+	}
+	.history td, .history th {padding: 12px 0; letter-spacing:-1px; word-break:keep-all;}
+	.history p {font-size: 12px; line-height:25px; padding-left:18px;}
+	.history p span {font-size: 13px; margin-right: 15px;}
+	.history p:before{display:inline-block; content:"• ";}
+}
+
+
+
+
+/* ================== sub0401-3예술감독 ================== */
+.leftbox{float:left; width:50%;}
+
+.rightbox{
+	height:auto;
+	background:#fff;
+	float:left;
+	width:50%;
+	margin-left:-50px;
+	margin-top:40px;
+	padding:40px 0 0 40px;
+	position:relative;
+}
+.rightbox p{text-align:left;}
+
+.namebox .name1{font-size:16px; line-height:20px;}
+.namebox .name2{font-size:38px; font-weight:800; margin:5px 0 20px;}
+
+.rightbox .line-bg{position:absolute; top:0; right:0;}
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px) {
+	.leftbox{width:45%;}
+}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.leftbox{float:none; width:100%;}
+
+	.rightbox{
+		height:auto;
+		float:none;
+		width:100%;
+		margin:-0 auto 0;
+		padding:30px 0 0 0;
+		position:relative;
+	}
+	.rightbox p{text-align:center;}
+
+	.namebox .name1{font-size:13px; line-height:18px;}
+	.namebox .name2{font-size:24px; margin:5px 0 15px;}
+
+	.rightbox .line-bg{display:none;}
+}
+
+
+
+
+
+/* ================== sub0401-4단원 ================== */
+.sub0403 .artist{text-align:left;}
+
+.sub04_tab{font-size: 16px; width:16.66666666666667%; height:50px; line-height:50px; text-align:center; float:left; box-sizing:border-box; border:1px solid #ddd; border-left:0; cursor:pointer; font-weight:600;}
+.sub04_tab:hover{color:#0080c8; text-decoration:underline;}
+.sub04_tab_a{color:#0080c8; text-decoration:underline;}
+.sub04_tab:first-child{border-left:1px solid #ddd;}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+	.sub04_tab{width:33.3%;  border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:13px;}
+	.sub04_tab:nth-child(1),.sub04_tab:nth-child(2),.sub04_tab:nth-child(3){border-top:1px solid #ddd;}
+	.sub04_tab:nth-child(4){border-left:1px solid #ddd;}
+}
+
+
+
+
+
+
+/* ================== 사이트맵 ================== */
+.gNavi2{clear:both; width:100%; margin:70px auto; word-break:break-all;}
+
+/* 메인메뉴 왼쪽시작*/
+.gNavi2>ul>li{width:14.28571428571429%; float:left;}
+.gNavi2>ul>li:last-child{float:left; margin-right:0px; position:relative;}
+
+/* 메인메뉴 롤아웃 */
+.gNavi2>ul>li>a{
+	cursor:default;
+	font-weight:600;
+	display:block;
+	width:90%;
+	font-size:18px;
+	text-align:center;
+	color:#ffffff;
+	background:#454848;
+	height:45px;
+	line-height:45px;
+}
+
+/* 서브메뉴 롤아웃 배경색상 & 글씨높이간격 비율에맞게 자동조절*/
+.gNavi2 ul li li{
+	background:#ffffff;
+	width:90%;
+	line-height:1.1em;
+	text-align:center;
+	font-size:14px;
+	border-bottom:1px solid #d1d1d1;
+}
+
+/* 서브메뉴 롤아웃 */
+.gNavi2>ul>li>ul>li a{display:block; color:#333333; padding:15px 3px;}
+
+/* 서브메뉴 롤오버 배경색상*/
+.gNavi2 ul li li:hover{color:#333333; background:#fffcf3;}
+.gNavi2 ul li li a:hover{color:#333333; background:#fffcf3;}
+.gNavi2 .head{background:#f8f8f8; padding:10px 3px;}
